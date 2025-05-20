@@ -1,0 +1,57 @@
+{{#if resume.talks.length}}
+  <section class="section">
+    <header>
+      <h2 class="section-title">Talks <span class="item-count">({{resume.talks.length}})</span></h2>
+    </header>
+    <section id="talks">
+      {{#each resume.talks}}
+        <section class="talk-item">
+          <header class="clear">
+            {{#if date}}
+              <div class="date">
+                {{MY date}}
+              </div>
+            {{/if}}
+            <div class="header-left">
+              {{#if event}}
+                <div class="event">
+                  {{event}}
+                </div>
+              {{/if}}
+              {{#if title}}
+                <div class="title">
+                  {{title}}
+                </div>
+              {{/if}}
+            </div>
+          </header>
+          <div class="item">
+            {{#if summary}}
+              <div class="summary">{{paragraphSplit summary}}</div>
+            {{/if}}
+            <div class="links">
+              {{#if website}}
+                <span class="website">
+                  <span class="fa-solid fa-up-right-from-square"></span>
+                  <a target="_blank" href="{{website}}">Event Website</a>
+                </span>
+              {{/if}}
+              {{#if slides}}
+                <span class="slides">
+                  <span class="fa-solid fa-file-powerpoint"></span>
+                  <a target="_blank" href="{{slides}}">Slides</a>
+                </span>
+              {{/if}}
+              {{#if recording}}
+                <span class="recording">
+                  <span class="fa-solid fa-video"></span>
+                  <a target="_blank" href="{{recording}}">Recording</a>
+                </span>
+              {{/if}}
+            </div>
+          </div>
+        </section>
+      {{/each}}
+    </section>
+  </section>
+{{/if}}

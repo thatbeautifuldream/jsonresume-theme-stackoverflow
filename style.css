@@ -789,3 +789,82 @@ section .location {
     padding-left: 0.1em;
   }
 }
+
+/* Talks section styles */
+#talks {
+  margin-top: 0.5em;
+}
+
+.talk-item {
+  margin-bottom: 1.2em;
+  padding-bottom: 0.7em;
+  border-bottom: 1px solid #f1f1f1;
+}
+
+.talk-item:last-of-type {
+  border-bottom: none;
+}
+
+.talk-item .header-left {
+  margin-bottom: 0.2em;
+}
+
+.talk-item .event {
+  font-weight: 600;
+  color: #3e6d8e;
+  display: inline-block;
+  margin-right: 0.5em;
+}
+
+.talk-item .title {
+  font-weight: 600;
+  color: #40484f;
+  display: inline-block;
+}
+
+.talk-item .date {
+  color: #606d76;
+  font-size: 1rem;
+  font-weight: 400;
+  float: right;
+}
+
+.talk-item .summary {
+  margin: 0.5em 0 0.3em 0;
+  color: #40484f;
+}
+
+.talk-item .links {
+  margin-top: 0.3em;
+}
+
+.talk-item .links span {
+  margin-right: 1em;
+  font-size: 0.97em;
+}
+
+.talk-item .links .fa-solid {
+  margin-right: 0.3em;
+  color: #ff6d1f;
+}
+
+.talk-item .links a {
+  color: #0095ff;
+  text-decoration: none;
+}
+
+.talk-item .links a:hover {
+  color: #0c65a5;
+  text-decoration: underline;
+}
+
+@media print {
+  .talk-item {
+    border-bottom: none;
+    margin-bottom: 0.7em;
+    padding-bottom: 0.2em;
+  }
+  .talk-item .links span {
+    font-size: 0.9em;
+  }
+}
